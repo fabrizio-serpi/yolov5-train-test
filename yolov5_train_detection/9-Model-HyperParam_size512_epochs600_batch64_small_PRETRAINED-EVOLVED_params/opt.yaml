@@ -1,0 +1,69 @@
+weights: ./yolov5_train_detection/1-Model-_size512_epochs300_batch64_small/weights/best.pt
+cfg: ''
+data: ./data_train_test_small/data.yaml
+hyp:
+  lr0: 0.00787
+  lrf: 0.01799
+  momentum: 0.77985
+  weight_decay: 0.00063
+  warmup_epochs: 3.2487
+  warmup_momentum: 0.80507
+  warmup_bias_lr: 0.07616
+  box: 0.03711
+  cls: 0.38921
+  cls_pw: 1.5245
+  obj: 0.41447
+  obj_pw: 1.2743
+  iou_t: 0.2
+  anchor_t: 2.1969
+  fl_gamma: 0.0
+  hsv_h: 0.01831
+  hsv_s: 0.29625
+  hsv_v: 0.44224
+  degrees: 0.0
+  translate: 0.08667
+  scale: 0.13648
+  shear: 0.0
+  perspective: 0.0
+  flipud: 0.0
+  fliplr: 0.5
+  mosaic: 1.0
+  mixup: 0.0
+  copy_paste: 0.0
+  anchors: 2.9963
+epochs: 600
+batch_size: 64
+imgsz: 512
+rect: false
+resume: false
+nosave: false
+noval: false
+noautoanchor: false
+noplots: false
+evolve: null
+bucket: ''
+cache: disk
+image_weights: false
+device: ''
+multi_scale: false
+single_cls: false
+optimizer: SGD
+sync_bn: false
+workers: 4
+project: yolov5_train_detection
+name: 30-11-2022--07-58-02_Model-HyperParam_size512_epochs600_batch64_small_PRETRAINED-EVOLVED_params
+exist_ok: true
+quad: false
+cos_lr: false
+label_smoothing: 0.0
+patience: 100
+freeze:
+- 0
+save_period: -1
+seed: 0
+local_rank: -1
+entity: null
+upload_dataset: false
+bbox_interval: -1
+artifact_alias: latest
+save_dir: yolov5_train_detection/30-11-2022--07-58-02_Model-HyperParam_size512_epochs600_batch64_small_PRETRAINED-EVOLVED_params
